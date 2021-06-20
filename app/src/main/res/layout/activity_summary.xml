@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SummaryActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@color/color_primary"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/Theme.TriviaApp.PopupOverlay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_20"
+            android:text="@string/summary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text17"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_height="0dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/padding_10"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                 android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/text17"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvName"
+                android:text="@string/here_are_the_answers_selected"
+                android:layout_marginTop="@dimen/padding_10"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/text17"
+                android:textStyle="normal"
+                />
+
+
+            <TextView
+                android:id="@+id/tvFirstQue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeading"
+                android:text="@string/who_is_the_best_cricketer_in_the_world"
+                android:layout_marginTop="@dimen/margin30"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvFirstAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstQue"
+                android:text=""
+                android:layout_marginTop="@dimen/padding_10"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/text_15"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:id="@+id/tvSecondQue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstAns"
+                android:text="@string/what_are_the_colors_in_the_national_flag"
+                android:layout_marginTop="@dimen/margin30"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/text_15"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvSecondAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecondQue"
+                android:text=""
+                android:layout_marginTop="@dimen/padding_10"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="@dimen/text_15"
+                android:textStyle="normal"
+                />
+
+
+
+
+
+            <TextView
+                android:id="@+id/tvFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin50"
+                android:background="@drawable/btn_round"
+                android:elevation="@dimen/margin_2"
+                android:gravity="center"
+                android:paddingVertical="@dimen/padding_14"
+                android:text="@string/finish"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecondAns" />
+
+
+            <TextView
+                android:id="@+id/tvHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/btn_round"
+                android:elevation="@dimen/margin_2"
+                android:gravity="center"
+                android:paddingVertical="@dimen/padding_14"
+                android:text="@string/history"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFinish" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
