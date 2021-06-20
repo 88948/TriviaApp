@@ -11,8 +11,12 @@ import androidx.room.Query
 @Dao
 interface DAOAccess {
 
+
+    //insert data
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun InsertData(gameTableModel: GameTableModel)
+
+    //get games list from db
 
     @Query("SELECT * FROM GameData")
     fun getGameHistory() :  LiveData<List<GameTableModel>>

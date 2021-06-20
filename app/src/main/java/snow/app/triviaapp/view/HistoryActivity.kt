@@ -9,8 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_history.*
 import snow.app.triviaapp.R
 import snow.app.triviaapp.model.GameTableModel
-import snow.app.triviaapp.model.HistoryModel
-import snow.app.triviaapp.utils.AppConstants
+ import snow.app.triviaapp.utils.AppConstants
 import snow.app.triviaapp.view.adapters.HistoryAdapter
 import snow.app.triviaapp.viewmodel.HistoryViewModel
 import snow.app.triviaapp.viewmodel.SummrayViewModel
