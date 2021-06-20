@@ -21,6 +21,8 @@ class HistoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
 
+
+
         //initialisations
         init()
 
